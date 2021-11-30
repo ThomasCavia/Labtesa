@@ -106,25 +106,48 @@ body{
 @media (min-width:320px){
 
     .grid-container{
-        background-color:white;
         display: grid;
         grid-template-columns: repeat(5, 1fr);
         grid-template-rows: 300px;
-        grid-gap: 20px;
+        grid-gap: 15px;
         margin-top: 20px;
-        width: 60%;
-        margin-left: auto;
-        margin-right: 15px;
+        width: 80%;
+        margin: 30px auto;
         border-radius: 15px;
-        opacity: .93;
     }
 
     .grid-item{
-        height: 260px;
-        background-color: white;
+        background-color: whitesmoke;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        width: 1fr;
+        height: 300px;
         border-radius: 10px;
+        transition: 0.3s;
+    }
+/*
+    #grid-item__1{
+        background-color: blueviolet;
     }
 
+    #grid-item__2{
+        background-color: chartreuse;
+    }
+
+    #grid-item__3{
+        background-color: chocolate;
+    }
+
+    #grid-item__4{
+        background-color: cornflowerblue;
+    }
+
+    #grid-item__5{
+        background-color: darkgreen;
+    }
+*/
     .titulo-grid{
         text-align: center;
         font-family: monospace;
@@ -134,17 +157,14 @@ body{
     }
 
     .img-grid{
-        height: 95px;
-        width: 115px;
-        margin-left: 11px;
-        margin-top: 10px;
+        height: 130px;
+        width: 150px;
         border-radius: 10px;
         transition: 0.4s;
     }
 
-    .img-grid:hover{
-        width: 128px;
-        height: 108px;
+    .grid-item:hover{
+        
     }
 
     .text-grid{
@@ -183,9 +203,11 @@ body{
     .form__empresa{
         display: flex;
         justify-content: space-around
+        /*
         align-items: center;
         flex-direction: column;
         height: 70px;
+        */
     }
 
     .form__telefono{
